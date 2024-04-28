@@ -1,0 +1,16 @@
+  177  git add .
+  178  git commit -m "Add text_ignore.txt to .gitignore"
+  179  git status
+  180  touch main_test.txt
+  181  git add .
+  182  git commit -m "Add main_test.txt"
+  183  git checkout -b develop
+  184  touch develop_test.txt
+  185  git add .
+  186  git commit -m "Add develop_test.txt"
+  187  git status
+  188  git add .
+  189  git commit -m "Update develop_test.txt"
+  190  git checkout main
+  191  git merge develop
+  192  git log
